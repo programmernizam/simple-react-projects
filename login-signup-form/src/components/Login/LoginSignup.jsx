@@ -12,15 +12,15 @@ export default function LoginSignup() {
       <div className="inputs">
         <div className="input">
           <img src={User_Icon} alt="" />
-          <input type="text" />
+          <input type="text" placeholder="Name" />
         </div>
         <div className="input">
           <img src={Email_Icon} alt="" />
-          <input type="email" />
+          <input type="email" placeholder="Email" />
         </div>
         <div className="input">
           <img src={Password_Icon} alt="" />
-          <input type="password" />
+          <input type="password" placeholder="Password" />
         </div>
       </div>
       <div className="forgot-password">
