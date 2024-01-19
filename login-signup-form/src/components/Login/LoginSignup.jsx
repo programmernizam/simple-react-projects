@@ -12,10 +12,14 @@ export default function LoginSignup() {
         <div className="underline"></div>
       </div>
       <div className="inputs">
-        <div className="input">
-          <img src={User_Icon} alt="" />
-          <input type="text" placeholder="Name" />
-        </div>
+        {action === "Login" ? (
+          <></>
+        ) : (
+          <div className="input">
+            <img src={User_Icon} alt="" />
+            <input type="text" placeholder="Name" />
+          </div>
+        )}
         <div className="input">
           <img src={Email_Icon} alt="" />
           <input type="email" placeholder="Email" />
@@ -25,9 +29,13 @@ export default function LoginSignup() {
           <input type="password" placeholder="Password" />
         </div>
       </div>
-      <div className="forgot-password">
-        Lost Password? <span>Click Here!</span>
-      </div>
+      {action === "Login" ? (
+        <></>
+      ) : (
+        <div className="forgot-password">
+          Lost Password? <span>Click Here!</span>
+        </div>
+      )}
       <div className="submit-container">
         <div
           className={action === "Login" ? "submit gray" : "submit"}
