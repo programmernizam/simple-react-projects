@@ -1,3 +1,9 @@
+import LoginSignup from "./components/Login/LoginSignup";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <LoginSignup />
+    </>
+  );
 }
