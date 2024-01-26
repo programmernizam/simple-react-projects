@@ -1,3 +1,5 @@
+import styles from "../style";
+import { arrowUp } from "../assets";
 export default function GetStarted() {
-  return <div>GetStarted</div>;
+  return <div className={`${styles}`}>GetStarted</div>;
 }
