@@ -22,7 +22,9 @@ export default function Hero() {
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation </span>
-            Payment Method.   
+            Payment Method.   git add .
+            git commit -m "[Update] Hero Component"
+            git push
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
