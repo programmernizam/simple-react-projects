@@ -1,6 +1,7 @@
-// import { features } from "../constants";
+import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import FeatureCard from "./FeatureCard";
 export default function Business() {
   return (
     <section id="features" className={layout.section}>
@@ -15,6 +16,11 @@ export default function Business() {
           of credit cards on the market.
         </p>
         <Button styles="mt-10" />
+      </div>
+      <div className={`${layout.sectionImg} flex-col`}>
+        {features.map((feature, index) => (
+          <FeatureCard key={index} />
+        ))}
       </div>
     </section>
   );
