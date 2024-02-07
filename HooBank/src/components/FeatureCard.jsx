@@ -18,10 +18,12 @@ export default function FeatureCard({ feature, index }) {
         />
       </div>
       <div className="flex-1 flex flex-col ml-3">
-        <h4 className="font-semibold font-poppins text-white text-[18px] leading-[23px]">
+        <h4 className="font-semibold font-poppins text-white text-[18px] leading-[23px] mb-1">
           {title}
         </h4>
-        <p>{content}</p>
+        <p className="font-normal font-poppins text-dimWhite text-[16px] leading-[24px] mb-1">
+          {content}
+        </p>
       </div>
     </div>
   );
