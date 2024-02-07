@@ -19,7 +19,7 @@ export default function Business() {
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (
-          <FeatureCard key={index} />
+          <FeatureCard key={index} feature={feature} index={index} />
         ))}
       </div>
     </section>
