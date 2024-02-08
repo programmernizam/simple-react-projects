@@ -2,6 +2,7 @@ import { logo } from "../assets";
 import { footerLinks } from "../constants";
 import styles from "../style";
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -39,6 +40,11 @@ export default function Footer() {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+          {year} HooBank. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
